@@ -1,0 +1,10 @@
+tep1=open('python.txt','r')
+tep2=open('laptrinh.txt','r')
+doc=tep1.readline()
+while doc:
+    tep2.write(doc)
+    doc=tep2.readline()
+tep2=open('laptrinh.txt','r')
+print(tep2.read())
+tep1.close()
+tep2.close()
